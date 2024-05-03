@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import Logo from "../src/assets/logo.svg";
 
 function App() {
   const [bill, setBill] = useState("");
@@ -37,7 +38,7 @@ function App() {
   return (
     <div className="sm:px-10 md:px-20 lg:px-32">
       <div className=" flex items-center justify-center my-14">
-        <img src="../src/assets/logo.svg" alt="" />
+        <img src={Logo} alt="logo" />
       </div>
       <div
         className=" space-mono-bold p-10 bg-white rounded-2xl flex flex-col gap-5
